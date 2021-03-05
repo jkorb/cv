@@ -1,0 +1,33 @@
+% This is a convenience package for my CV.
+\ProvidesPackage{layout}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[colorlinks=true, urlcolor=blue, citecolor=black,linkcolor=black]{hyperref}
+\hypersetup{%
+  pdfauthor = {Johannes Korbmacher},
+  pdftitle = {Johannes Korbmacher - Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+\usepackage[margin=1in]{geometry}
+\renewcommand*{\thefootnote}{%
+  \fnsymbol{footnote}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{%
+  \textsc{Johannes Korbmacher}}
+\rhead{%
+  \textsc{Page \thepage\ of {\pageref{last}}}}
+\cfoot{%
+  \tiny \emph{Last edited: \today} ---
+  Downloaded from: \url{https://jkorbmacher.org}
+}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[official]{eurosym}
+\usepackage{parskip}
+\frenchspacing
+\usepackage{etaremune}
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelenumi}{\itshape\theenumi.}
+\usepackage{longtable}
